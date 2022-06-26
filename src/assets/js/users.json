@@ -1,0 +1,21 @@
+{
+    "users": [{
+        "user_id": 1,
+        "first_name": "andrew",
+        "last_name": "user1",
+        "email": "andrew@test.com",
+        "password": "andrew@123"
+    },{
+        "user_id": 2,
+        "first_name": "mike",
+        "last_name": "user2",
+        "email": "mike@test.com",
+        "password": "mike@123"
+    },{
+        "user_id": 3,
+        "first_name": "jeet",
+        "last_name": "user3",
+        "email": "jeet@test.com",
+        "password": "jeet@123"
+    }]
+}

@@ -1,0 +1,15 @@
+.input-group-text{
+    height: 100%;
+}
+.eye-button{
+    display: flex;
+    position: relative;
+    align-items: center;
+    left: -30px;
+    width: 0px;
+}
+
+.passwordField{
+    border-top-right-radius: 0.25rem !important;
+    border-bottom-right-radius: 0.25rem !important;
+}

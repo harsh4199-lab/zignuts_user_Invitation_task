@@ -1,0 +1,33 @@
+<div class="container">
+    <h2 class="text-center mb-4 mt-4">Invitation List For User {{userName}}</h2>
+    <div class="table-responsive table-wrapper-scroll-y my-custom-scrollbar">
+        <table class="table table-hover" *ngIf="userInvitationsList.length">
+            <thead>
+                <tr>
+                    <th class="text-center" scope="col">Sender</th>
+                    <th scope="col">Invitation</th>
+                    <th class="text-center" scope="col">Vector</th>
+                    <th class="text-center" scope="col">Time</th>
+                    <th class="text-center" scope="col">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let data of userInvitationsList">
+                    <td class="text-center" [ngStyle]="data.status == 'read' ? {'backgroundColor': 'darkseagreen'} : {'backgroundColor': 'gainsboro'}"
+                        style="width: 100px;">{{data.sender_id}}</td>
+                    <td [ngStyle]="data.status == 'read' ? {'backgroundColor': 'darkseagreen'} : {'backgroundColor': 'gainsboro'}"
+                        style="width: 400px;">{{data.invite}}</td>
+                    <td class="text-center" [ngStyle]="data.status == 'read' ? {'backgroundColor': 'darkseagreen'} : {'backgroundColor': 'gainsboro'}"
+                        style="width: 100px;">{{data.vector}}</td>
+                    <td class="text-center" [ngStyle]="data.status == 'read' ? {'backgroundColor': 'darkseagreen'} : {'backgroundColor': 'gainsboro'}"
+                        style="width: 100px;">{{data.invite_time}}</td>
+                    <td class="text-center" [ngStyle]="data.status == 'read' ? {'backgroundColor': 'darkseagreen'} : {'backgroundColor': 'gainsboro'}"
+                        style="width: 100px;">{{data.status}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div style="width: 100%;">
+        <button class="btn btn-success mt-3 mb-3 float-end" (click)="logOut()">Log out</button>
+    </div>
+</div>
